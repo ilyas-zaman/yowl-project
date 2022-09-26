@@ -1,0 +1,24 @@
+{
+   "type": "mysql",
+   "host": "127.0.0.1",
+   "port": 8889,
+   "username": "root",
+   "password": "root",
+   "database": "yowl",
+   "synchronize": true,
+   "logging": false,
+   "entities": [
+      "src/entity/index.ts"
+   ],
+   "migrations": [
+      "src/migration/**/*.ts"
+   ],
+   "subscribers": [
+      "src/subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+   }
+}
